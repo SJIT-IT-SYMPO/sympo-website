@@ -1258,10 +1258,64 @@
 	position: relative; 
 	margin: 0 auto;
 	width: 100%;
-	background:  url(../images/debut_dark.png) repeat;
+	/*background:  url(../images/debut_dark.png) repeat;*/
+	background-color: #611d0e;
 	padding-top:40px;
 	padding-bottom:40px;
 }
+
+.background-pat11{
+	position: relative; 
+	margin: 0 auto;
+	width: 100%;
+	/*background:  url(../images/debut_dark.png) repeat;*/
+	background-color: #3d215f;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+.background-pat12{
+	position: relative; 
+	margin: 0 auto;
+	width: 100%;
+	/*background:  url(../images/debut_dark.png) repeat;*/
+	background-color: #a45481;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+.background-pat13{
+	position: relative; 
+	margin: 0 auto;
+	width: 100%;
+	/*background:  url(../images/debut_dark.png) repeat;*/
+	background-color: #a59d3b;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+.background-pat14{
+	position: relative; 
+	margin: 0 auto;
+	width: 100%;
+	/*background:  url(../images/debut_dark.png) repeat;*/
+	background-color: #c2677d;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+
+.background-pat15{
+	position: relative; 
+	margin: 0 auto;
+	width: 100%;
+	background:  url(../images/debut_dark.png) repeat;
+	/*background-color: #c2677d;*/
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+
 .background-pat1{
 	position: relative; 
 	margin: 0 auto;
@@ -1663,7 +1717,7 @@
 }
 
 
-.team1{
+.team11{
 	position: relative; 
 	margin: 0 auto;
 	width: 100%;
@@ -1672,6 +1726,51 @@
 	background-size:cover;	
 	height:500px;
 	overflow:hidden;
+	border-radius: 10px;
+}
+.team12{
+	position: relative; 
+	margin: 0 auto;
+	width: 100%;
+	margin-top:4px;
+	background: url('../images/team1.jpg') no-repeat top center;
+	background-size:cover;	
+	height:500px;
+	overflow:hidden;
+	border-radius: 10px;
+}
+.team13{
+	position: relative; 
+	margin: 0 auto;
+	width: 100%;
+	margin-top:4px;
+	background: url('../images/team1.jpg') no-repeat top center;
+	background-size:cover;	
+	height:500px;
+	overflow:hidden;
+	border-radius: 10px;
+}
+.team14{
+	position: relative; 
+	margin: 0 auto;
+	width: 100%;
+	margin-top:4px;
+	background: url('../images/team1.jpg') no-repeat top center;
+	background-size:cover;	
+	height:500px;
+	overflow:hidden;
+	border-radius: 10px;
+}
+.team15{
+	position: relative; 
+	margin: 0 auto;
+	width: 100%;
+	margin-top:4px;
+	background: url('../images/team1.jpg') no-repeat top center;
+	background-size:cover;	
+	height:500px;
+	overflow:hidden;
+	border-radius: 10px;
 }
 .team2{
 	position: relative; 
