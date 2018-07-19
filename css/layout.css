@@ -1724,7 +1724,7 @@
 	margin: 0 auto;
 	width: 100%;
 	margin-top:4px;
-	background: url('../images/team1.jpg') no-repeat top center;
+	background: url() no-repeat top center;
 	background-size:cover;	
 	height:500px;
 	overflow:hidden;
@@ -1735,7 +1735,7 @@
 	margin: 0 auto;
 	width: 100%;
 	margin-top:4px;
-	background: url('../images/team1.jpg') no-repeat top center;
+	background: url('') no-repeat top center;
 	background-size:cover;	
 	height:500px;
 	overflow:hidden;
@@ -1746,7 +1746,7 @@
 	margin: 0 auto;
 	width: 100%;
 	margin-top:4px;
-	background: url('../images/team1.jpg') no-repeat top center;
+	background: url('') no-repeat top center;
 	background-size:cover;	
 	height:500px;
 	overflow:hidden;
@@ -1757,7 +1757,7 @@
 	margin: 0 auto;
 	width: 100%;
 	margin-top:4px;
-	background: url('../images/team1.jpg') no-repeat top center;
+	background: url('') no-repeat top center;
 	background-size:cover;	
 	height:500px;
 	overflow:hidden;
@@ -1768,7 +1768,7 @@
 	margin: 0 auto;
 	width: 100%;
 	margin-top:4px;
-	background: url('../images/team1.jpg') no-repeat top center;
+	background: url('') no-repeat top center;
 	background-size:cover;	
 	height:500px;
 	overflow:hidden;
@@ -1779,7 +1779,7 @@
 	margin: 0 auto;
 	width: 100%;
 	margin-top:4px;
-	background: url('../images/team2.jpg') no-repeat top center;
+	background: url('') no-repeat top center;
 	background-size: cover;	
 	height:500px;
 	overflow:hidden;
