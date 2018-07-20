@@ -7,7 +7,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Incognito00</title>
+	<title>Incognito</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -28,10 +28,10 @@
 		
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.png">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	<link rel="shortcut icon" href="images/favicon.png" />
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
 </head>
 <body class="preload">
 <!-- 
@@ -680,20 +680,30 @@ but that's the creativity of those eye which creates something different.</p>
 		<div class="container">
 		<section class="cbp-so-section">
 			<div class="sixteen columns cbp-so-side cbp-so-side-right">
-				<form name="ajax-form" id="ajax-form" action="mail-it.php" method="post">
+				<form name="ajax-form" id="form_reg"  method="post">
 				<h4>Say Hello</h4>
-					<label for="name">Name: * 
-						<span class="error" id="err-name">please enter name</span>
+					<label for="name">Name: *  {{ name }}
+						<span class="error" id="err-name" >please enter name</span>
+					
 					</label>
-					<input name="name" id="name" type="text" />
+					<input name="name" id="name" type="text" v-model="name" />
 					<label for="email">E-Mail: * 
 						<span class="error" id="err-email">please enter e-mail</span>
 						<span class="error" id="err-emailvld">e-mail is not a valid format</span>
 					</label>
-					<input name="email" id="email" type="text" />
-					<label for="message">Message:</label>
-					<textarea name="message" id="message"></textarea>
-					<button class="send_message" id="send">Submit</button>
+					<input name="email" id="email" type="text" v-model="email" />
+					<label for="email">College: * 
+						<span class="error" id="err-email">please Your College name</span>
+						
+					</label>
+					<input name="email" id="college" type="text" v-model="college" />
+					<label for="email">Phone Number: 
+						<span class="error" id="err-email">please enter your phone number</span>
+						<span class="error" id="err-emailvld">e-mail is not a valid format</span>
+					</label>
+					<input name="email" id="phone" type="text" v-model="phone_no" />
+					<!-- <button  >Submit</button> -->
+					<button class="send_message" id="send" v-on:click="createParticipant">Submit</button>
 					<div class="error" id="err-form">There was a problem validating the form please check!</div>
 					<div class="error" id="err-timedout">The connection to the server timed out!</div>
 					<div class="error" id="err-state"></div>
@@ -701,6 +711,9 @@ but that's the creativity of those eye which creates something different.</p>
 				<div id="ajaxsuccess">Successfully sent!!</div>	
 			</div>
 		</section>	
+
+		<!-- Vue Func -->
+		
 		</div>
 		</div>
 		<div class="background-pat1-last">	
@@ -777,7 +790,40 @@ but that's the creativity of those eye which creates something different.</p>
 <script type="text/javascript" src="js/jquery.colorbox.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="js/template.js"></script>  	  
+<script type="text/javascript" src="js/template.js"></script> 
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+<script type="text/javascript" >
+
+var vue = new Vue({
+  			el: '#form_reg',
+ 			 data: {
+    			name :"",
+    			email :"",
+    			college :"" ,
+    			phone_no :"" ,
+  					}
+  					,
+				  methods: {
+				    createParticipant: function () {
+				    	// ggg = 
+				      axios.post("https://incognito18.pythonanywhere.com/api/",{"name" : this.name ,
+				    	 "email" : this.email , 
+				    	"colege" : this.college , 
+				    	"phone_no" : this.phone_no, 
+				    	headers: {
+        				'Access-Control-Allow-Origin': '*',
+        				// 'Content-Type': 'application/json',
+      					} });
+				      console.log(this.name);
+				    }
+				  }
+				})
+</script> 	  
+
 <!-- End Document
 ================================================== -->
 </body>
