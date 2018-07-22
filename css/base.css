@@ -251,3 +251,12 @@
 ::-moz-selection {
 	background: rgba(0,0,0,.2); /* Firefox */
 }
+
+.my_button{
+	margin :10px 10px 10px 10px ;
+	border-radius: 5px;
+	background-color:  #d35400 ;
+	color : white ;
+	padding: 10px 10px 10px 10px ;
+}
+	

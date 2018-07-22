@@ -1997,7 +1997,7 @@
 .services-offer .services-icon1:before{
 	position: absolute;
 	font-family: 'FontAwesome';
-	content: "\f0d0";
+	content: "\f179";
 	width: 100%;
 	color: #EC572C;
 	font-size:60px;
@@ -2016,7 +2016,7 @@
 .services-offer .services-icon2:before{
 	position: absolute;
 	font-family: 'FontAwesome';
-	content: "\f108";
+	content: "\f018";
 	width: 100%;
 	color: #EC572C;
 	font-size:60px;
@@ -2035,7 +2035,7 @@
 .services-offer .services-icon3:before{
 	position: absolute;
 	font-family: 'FontAwesome';
-	content: "\f0ac";
+	content: "\f091";
 	width: 100%;
 	color: #EC572C;
 	font-size:68px;
@@ -2045,11 +2045,11 @@
 	z-index: 1; 
 }
 
-.no-touch.cssanimations .services-offer .services-icon3:before {
+/*.no-touch.cssanimations .services-offer .services-icon3:before {
 	-webkit-animation: spinAround 6s linear infinite;
 	-moz-animation: spinAround 6s linear infinite;
 	animation: spinAround 6s linear infinite;
-}
+}*/
 
 .services-list p { margin: 10px 0 10px 0;padding:0; }
 
