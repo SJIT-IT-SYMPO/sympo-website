@@ -713,7 +713,10 @@ but that's the creativity of those eye which creates something different.</p>
 					</label>
 					<input name="email" id="phone" type="text" v-model="phone_no" />
 					<!-- <button  >Submit</button> -->
-					<center><div  class="my_button" v-on:click="createParticipant">Submit</div></center>
+					<center>
+						<div  class="my_button" v-on:click="createParticipant">Submit</div>
+						<!-- <div  class="my_button" v-on:click="setName">Submit</div> -->
+					</center>
 					
 					
 				</form>
@@ -831,27 +834,32 @@ var vue = new Vue({
 				    	"phone_no" : this.phone_no}, 
 				    	
       					).then(function(response){
-      						this.name = " ";
-      						console.log("sadasdasdasd");	
-      						this.email = "" ;
-      						this.college = "";
-      						this.phone_no = "";
-      						this.success = !this.success ;
-      						console.log(this.success);
+      						vue.name = "";
+      						// console.log("sadasdasdasd");	
+      						vue.email = "" ;
+      						vue.college = "";
+      						vue.phone_no = "";
+      						vue.success = !this.success ;
+      						// console.log(this.success);
       						alert("Thank u For Registering");
 
       					})
       					.catch(function(error){
-      						
-      						
+      						console.log(this);
+      						console.log("error");
+      						console.log(vue.name);
+      						this.name = "";
+      						console.log(vue.name);
       						this.err_email = error.response.data['email'][0];
-      						alert(this.err_email);
-      					
+      						// alert(this.err_email);      					
 
       					})
       					
 				      
-				    }
+				    },
+				    setName : function () {
+				    	this.name = "";
+				    }  
 				  }
 				})
 </script> 	  
