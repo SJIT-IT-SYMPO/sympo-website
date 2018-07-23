@@ -1042,7 +1042,7 @@
 	#navigation ul li {
 		display: inline;
 		margin-right:30px;
-		font-family: 'Lato', sans-serif;
+		font-family: 'Alveria Serif Libre', sans-serif;
 		font-weight:200;
 	}
 
@@ -1346,7 +1346,7 @@
 	background:  url(../images/classy_fabric.png) repeat;
 }
 .title h6{
-	font-family:'OpenSans-Light-webfont';
+	font-family:'Averia Serif Libre',cursive;
 		font-weight:400;
 	padding-top:20px;
 	padding-bottom:20px;
@@ -1720,6 +1720,7 @@
 }
 
 
+
 .team11{
 	position: relative;
 	margin: 0 auto;
@@ -1801,10 +1802,12 @@
 .team-list p { margin: 5px 0 5px 0; }
 
 
-.list-team li {
+li {
     list-style: none;
     margin:0 auto;
     text-align: left;
+		font-family: 'Averia Serif Libre',cursive;
+		font-size: 20px;
 	padding-left:25px;
 }
 
@@ -3091,7 +3094,7 @@ a.link-blog:hover{
 	h2 { font-size: 45px; line-height: 47px;}
 	h3 { font-size: 40px; line-height: 42px;}
 	h4 { font-size: 35px; line-height: 37px;}
-	h5 { font-size: 25px; line-height: 27px;}
+	h5 { font-size: 30px; line-height: 27px;}
 	h6 { font-size: 20px; line-height: 22px;}
 	h1 { font-size: 25px; line-height:27px;}
 #profile .title .angle  h1,
