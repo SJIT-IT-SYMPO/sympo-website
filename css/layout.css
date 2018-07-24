@@ -1463,7 +1463,7 @@
 .facts .facts-icon1:before{
 	position: absolute;
 	font-family: 'FontAwesome';
-	content: "";
+	content: "\f135";
 	color: #EC572C;
 	margin-left:10px;
 	font-size:50px;
@@ -1473,7 +1473,7 @@
 	z-index: 1;
 }
 
-.no-touch.cssanimations .facts .facts-icon1:before {
+.no-touch.cssanimations .facts .facts-icon4:before {
 	-webkit-animation: tada 5s infinite linear;
 	-moz-animation: tada 5s infinite linear;
 	-o-animation: tada 5s infinite linear;
@@ -1530,26 +1530,7 @@
 	text-align:left;
 	z-index: 1;
 }
-.facts .facts-icon2{
-	position: relative;
-	float:left;
-	text-align:left;
-	width:50%;
-	height: 58px;
-}
-.facts .facts-icon2:before{
-	position: absolute;
-	font-family: 'FontAwesome';
-	content: "\f0ac";
-	color: #EC572C;
-	margin-left:10px;
-	vertical-align:middle;
-	font-size:50px;
-	line-height: 58px;
-	display: inline-block;
-	text-align:left;
-	z-index: 1;
-}
+
 .facts .facts-icon5{
 	position: relative;
 	float:left;
@@ -1710,7 +1691,27 @@
 	text-align:left;
 	z-index: 1;
 }
-.no-touch.cssanimations .facts .facts-icon4:before {
+.facts .facts-icon8{
+	position: relative;
+	float:left;
+	text-align:left;
+	width:50%;
+	height: 58px;
+}
+.facts .facts-icon8:before{
+	position: absolute;
+	font-family: 'FontAwesome';
+	content: "\f124";
+	color: #EC572C;
+	padding-left:70px;
+	vertical-align:middle;
+	font-size:50px;
+	line-height: 58px;
+	display: inline-block;
+	text-align:left;
+	z-index: 1;
+}
+.no-touch.cssanimations .facts .facts-icon1:before {
 	-webkit-animation: toBottomFromTop 3s forwards infinite;
 	-moz-animation: toBottomFromTop 3s forwards infinite;
 	animation: toBottomFromTop 3s forwards infinite;
