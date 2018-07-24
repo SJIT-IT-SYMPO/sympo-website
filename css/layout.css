@@ -655,9 +655,9 @@
 	}
 }
 .home-text-middle{
-	font-family: 'Righteous', cursive;
+	font-family: 'Audiowide', cursive;
 	text-transform: uppercase;
-	font-size: 120px;
+	font-size: 100px;
 	line-height:160px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.6), 3px 3px 5px rgba(0,0,0,.3);
 	font-weight:900;
@@ -759,6 +759,7 @@
 		animation-timing-function: ease-in;
 	}
 }
+
 .home-text-middle span{
 	color:#EC572C;
 }
@@ -1853,12 +1854,13 @@
 	margin: 0 auto;
 	width: 100%;
 	margin-top:4px;
-	background: url('/home/ahmad/Downloads/WhatsApp Image 2018-07-23 at 21.42.13.jpeg') no-repeat top center;
+	background: url('') no-repeat top center;
 	background-size:cover;
 	height:500px;
 	overflow:hidden;
 	border-radius: 10px;
 }
+
 .team2{
 	position: relative;
 	margin: 0 auto;
@@ -1918,7 +1920,7 @@ li {
 }
 
 .cl-effect-18-team a {
-	padding: 0 2px;
+	padding:0 2px;
 	color: #fff;
 	font-weight: 400;
 	-webkit-transition: color 0.3s;
