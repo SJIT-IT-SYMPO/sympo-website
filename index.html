@@ -352,11 +352,11 @@ but that's the creativity of those eye which creates something different.</p>
 			<div class="eight columns team-list cbp-so-side cbp-so-side-right">
 				<h5>Guidelines </h5>
 				<ul style="line-height:40%" class="list-team">
-					<li class="check"><p>Maximum of 2 members per team .</p></li>
-					<li class="check"><p>You may be a Lone Wolf .</p></li>
-					<li class="check"><p>Consists of Two(2) Rounds .</p></li>
+					<li class="check"><p>Maximum of 2 members per team.</p></li>
+					<li class="check"><p>You may be a Lone Wolf.</p></li>
+					<li class="check"><p>Consists of Two(2) Rounds.</p></li>
 					<li class="check"><p>MCQs will decide who gets a shot at the finals.</p></li>
-					<li class="check"><p>Actual Code War starts .</p></li>
+					<li class="check"><p>Actual Code War starts.</p></li>
 					<br>
 					<li class="check"><p style="font-family:'Poiret One',cursive">For any queries contact-</p></li>
 					<li class="check"><p><pre style="font-family:'Poiret One',cursive">Rajendran:+91 90962789014</pre></p></li>
@@ -399,9 +399,9 @@ but that's the creativity of those eye which creates something different.</p>
 <div class="eight columns team-list cbp-so-side cbp-so-side-left">
 				<h5>Guidelines </h5>
 				<ul class="list-team">
-					<li class="check"><p>Maximum of 2 members per team .</p></li>
-					<li class="check"><p>You may be a Lone Wolf .</p></li>
-					<li class="check"><p>Consists of Two(2) Rounds .</p></li>
+					<li class="check"><p>Maximum of 2 members per team.</p></li>
+					<li class="check"><p>You may be a Lone Wolf.</p></li>
+					<li class="check"><p>Consists of Two(2) Rounds.</p></li>
 					<li class="check"><p>MCQs will decide who gets a shot at the finals.</p></li>
 					<li class="check"><p>Actual Code War starts .</p></li><br>
 					<li class="check"><p style="font-family:'Poiret One',cursive"><b>For any queries contact-</b></p></li>
@@ -483,8 +483,8 @@ but that's the creativity of those eye which creates something different.</p>
 			<div class="eight columns team-list cbp-so-side cbp-so-side-left">
 				<h5>Guidelines </h5>
 				<ul class="list-team">
-					<li class="check"><p>Be a Lone Wolf .</p></li>
-					<li class="check"><p>A topic will be given and participants are required to speak for and against the given topic at the judge's command. </p></li>
+					<li class="check"><p>Be a Lone Wolf.</p></li>
+					<li class="check"><p>A topic will be given and participants are required to speak for and against the given topic at the judge's command.</p></li>
 					<li class="check"><p>Humour and creativity will be much appreciated.</p></li>
 	<br>
 					<li class="check"><p style="font-family:'Poiret One',cursive"><b>For any queries contact-</b></p></li>
@@ -533,7 +533,7 @@ but that's the creativity of those eye which creates something different.</p>
 			<div class="eight columns team-list cbp-so-side cbp-so-side-left">
 				<h5>Guidelines </h5>
 				<ul class="list-team">
-					<li class="check"><p>Maximum of 2 members per team .</p></li>
+					<li class="check"><p>Maximum of 2 members per team.</p></li>
 					<li class="check"><p>Multi level games with one shot (round) and the last man standing wins.</p></li>
 					<li class="check"><p>Be a Pirate.</p></li>
 	<br>
@@ -740,21 +740,21 @@ but that's the creativity of those eye which creates something different.</p>
 		</div>
 
 
-		<div class="background-pat15">
+			<div class="background-pat15">
 		<div class="container">
 		<section class="cbp-so-section">
 			<div class="sixteen columns cbp-so-side cbp-so-side-right">
 				<form  id="form_reg" >
 				<h4 >Say Hello</h4>
 
-				<h4 v-if="success"> Thank u For Registering </h4>
+
 					<label for="name">Name: *
 						<span class="error" id="err-name" >please enter name</span>
 
 					</label>
 					<input name="name" id="name" type="text" v-model="name"  />
-					<label for="email">E-Mail: *
-						{{ err_email }}
+					<label for="email">E-Mail: * {{err_email}}
+
 						<span class="error" id="err-email">please enter e-mail</span>
 						<span class="error" id="err-emailvld">  </span>
 					</label>
@@ -764,13 +764,19 @@ but that's the creativity of those eye which creates something different.</p>
 
 					</label>
 					<input name="email" id="college" type="text" v-model="college" />
-					<label for="email">Phone Number:
+					<label for="email">Phone Number: {{err_phone}}
 						<span class="error" id="err-email">please enter your phone number</span>
 						<span class="error" id="err-emailvld">e-mail is not a valid format</span>
 					</label>
 					<input name="email" id="phone" type="text" v-model="phone_no" />
 					<!-- <button  >Submit</button> -->
-					<center><div  class="my_button" v-on:click="createParticipant">Submit</div></center>
+					<center>
+						<div  class="my_button" v-on:click="createParticipant">Submit</div>
+						<!-- <div  class="my_button" v-on:click="setName">Submit</div> -->
+					</center>
+
+
+
 
 
 				</form>
@@ -782,6 +788,8 @@ but that's the creativity of those eye which creates something different.</p>
 
 		</div>
 		</div>
+
+
 		<div id="cons" class="background-pat1-last">
 		<div class="contact-info">
 			<div class="container">
@@ -863,13 +871,14 @@ but that's the creativity of those eye which creates something different.</p>
 
 var vue = new Vue({
   			el: '#form_reg',
-  			success : false ,
+
  			 data: {
     			name :"",
     			email :"",
     			college :"" ,
     			phone_no :"" ,
     			err_email : "" ,
+    			err_phone : "" ,
     			err : {
     				"name" : "",
     				"email" : "",
@@ -886,22 +895,24 @@ var vue = new Vue({
 				    	"phone_no" : this.phone_no},
 
       					).then(function(response){
-      						this.name = " ";
-      						console.log("sadasdasdasd");
-      						this.email = "" ;
-      						this.college = "";
-      						this.phone_no = "";
-      						this.success = !this.success ;
-      						console.log(this.success);
-      						alert("Thank You For Registering");
+      						alert("Thank u For Registering");
+      						vue.name = "";
+      						// console.log("sadasdasdasd");
+      						vue.email = "" ;
+      						vue.college = "";
+      						vue.phone_no = "";
+
+      						// console.log(this.success);
+
 
       					})
       					.catch(function(error){
 
-
-      						this.err_email = error.response.data['email'][0];
-      						alert(this.err_email);
-
+      						vue.name = "";
+      						// console.log(vue.name);
+      						vue.err_email = error.response.data['email'][0];
+      						vue.err_phone = error.response.data['phone_no'][0];
+      						// alert(this.err_email);
 
       					})
 
@@ -909,6 +920,7 @@ var vue = new Vue({
 				    }
 				  }
 				})
+
 </script>
 
 <!-- End Document
