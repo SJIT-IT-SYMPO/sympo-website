@@ -119,7 +119,7 @@ OpenSans-Light-webfont<!DOCTYPE html>
 
 
 
-	<a href="#home" class="scroll" ><img src="images/incognitologo.png" alt="logo"</a></div>
+	<a href="#home" class="scroll" ><img src="images/incognitologo.png" alt="logo" ></a></div>
                     <ul   id="menu">
                         <li>
                             <a href="#home" class="scroll">Home</a>
@@ -797,21 +797,21 @@ but that's the creativity of those eye which creates something different.</p>
 		</div>
 
 
-		<div class="background-pat15">
+			<div class="background-pat15">
 		<div class="container">
 		<section class="cbp-so-section">
 			<div class="sixteen columns cbp-so-side cbp-so-side-right">
 				<form  id="form_reg" >
 				<h4 >Say Hello</h4>
 
-				<h4 v-if="success"> Thank u For Registering </h4>
+				
 					<label for="name">Name: *
 						<span class="error" id="err-name" >please enter name</span>
 
 					</label>
 					<input name="name" id="name" type="text" v-model="name"  />
-					<label for="email">E-Mail: *
-						{{ err_email }}
+					<label for="email">E-Mail: * {{err_email}}
+						
 						<span class="error" id="err-email">please enter e-mail</span>
 						<span class="error" id="err-emailvld">  </span>
 					</label>
@@ -821,13 +821,19 @@ but that's the creativity of those eye which creates something different.</p>
 
 					</label>
 					<input name="email" id="college" type="text" v-model="college" />
-					<label for="email">Phone Number:
+					<label for="email">Phone Number: {{err_phone}}
 						<span class="error" id="err-email">please enter your phone number</span>
 						<span class="error" id="err-emailvld">e-mail is not a valid format</span>
 					</label>
 					<input name="email" id="phone" type="text" v-model="phone_no" />
 					<!-- <button  >Submit</button> -->
-					<center><div  class="my_button" v-on:click="createParticipant">Submit</div></center>
+					<center>
+						<div  class="my_button" v-on:click="createParticipant">Submit</div>
+						<!-- <div  class="my_button" v-on:click="setName">Submit</div> -->
+					</center>
+					
+					
+					
 
 
 				</form>
@@ -839,6 +845,8 @@ but that's the creativity of those eye which creates something different.</p>
 
 		</div>
 		</div>
+
+
 		<div id="cons" class="background-pat1-last">
 		<div class="contact-info">
 			<div class="container">
@@ -920,13 +928,14 @@ but that's the creativity of those eye which creates something different.</p>
 
 var vue = new Vue({
   			el: '#form_reg',
-  			success : false ,
+  			
  			 data: {
     			name :"",
     			email :"",
     			college :"" ,
     			phone_no :"" ,
     			err_email : "" ,
+    			err_phone : "" ,
     			err : {
     				"name" : "",
     				"email" : "",
@@ -943,29 +952,32 @@ var vue = new Vue({
 				    	"phone_no" : this.phone_no},
 
       					).then(function(response){
-      						this.name = " ";
-      						console.log("sadasdasdasd");
-      						this.email = "" ;
-      						this.college = "";
-      						this.phone_no = "";
-      						this.success = !this.success ;
-      						console.log(this.success);
-      						alert("Thank You For Registering");
+      						alert("Thank u For Registering");
+      						vue.name = "";
+      						// console.log("sadasdasdasd");	
+      						vue.email = "" ;
+      						vue.college = "";
+      						vue.phone_no = "";
+      						
+      						// console.log(this.success);
+      						
 
       					})
       					.catch(function(error){
-
-
-      						this.err_email = error.response.data['email'][0];
-      						alert(this.err_email);
-
+      						
+      						vue.name = "";
+      						// console.log(vue.name);
+      						vue.err_email = error.response.data['email'][0];
+      						vue.err_phone = error.response.data['phone_no'][0];
+      						// alert(this.err_email);      					
 
       					})
-
-
-				    }
+      					
+				      
+				    }			    
 				  }
 				})
+
 </script>
 
 <!-- End Document
