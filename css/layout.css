@@ -1885,16 +1885,16 @@
 	font-weight:300;
 }
 
-.team-list p { margin: 5px 0 5px 0; }
+.team-list p { margin: 0px 0px 0px 0px; }
 
 
 li {
     list-style-type:none;
-    margin:30px;
+    margin:10px;
     text-align: left;
 		font-family: 'Averia Serif Libre',cursive;
 		font-size: 20px;
-	padding-left:55px;
+	padding-left:10px;
 }
 
 .check{
