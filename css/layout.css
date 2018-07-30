@@ -1122,12 +1122,8 @@
 }
 @media only screen and (max-width: 767px) {
 	.logo{
-		margin-left:10px;
-		margin-top:10px;
-		width: 140px;
-		height:50px;
+		display:none;
 	}
-
 	#navigation ul {
 		width: 200px;
 		padding: 5px 0;
@@ -1138,12 +1134,9 @@
 		background: #fff url(../images/icon-menu.png) no-repeat 10px 11px;
 		border-radius: 3px;
 	}
-
-	ul#menu li {
-		display: none;
+	ul #menu li {
 		margin: 0;
 	}
-
 	#navigation .current {
 		display: block!important;
 	}
@@ -1176,10 +1169,7 @@
 
 
 	.logo {
-		margin-left:-10px;
-		margin-top:15px;
-		width: 112px;
-		height:40px;
+		display:none;
 	}
 
 	#navigation ul {
@@ -1193,8 +1183,7 @@
 		border-radius: 3px;
 	}
 
-	ul#menu li {
-		display: none;
+	ul #menu li {
 		margin: 0;
 	}
 
@@ -2983,6 +2972,8 @@ a.link-blog:hover{
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	h1 { font-size: 35px; line-height:37px;}
+	img {width:70px;height:70px;}
+	.home-text-top p{font-size: 20px}
 #profile .title .angle  h1,
 #team .title .angle  h1,
 #services .title .angle  h1,
@@ -3036,15 +3027,15 @@ a.link-blog:hover{
 	margin-left:-240px;
 }
 .home-text-top{
-	font-size: 30px;
+	font-size: 25px;
 	line-height:30px;
 }
 .home-text-middle{
-	font-size: 80px;
+	font-size: 50px;
 	line-height:80px;
 }
 .home-text-bottom{
-	font-size: 30px;
+	font-size: 15px;
 	line-height:30px;
 }
 
@@ -3080,6 +3071,7 @@ a.link-blog:hover{
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
 	h1 { font-size: 25px; line-height:27px;}
+	img {width:50px;height: 50px;}
 #profile .title .angle  h1,
 #team .title .angle  h1,
 #services .title .angle  h1,
@@ -3096,11 +3088,11 @@ a.link-blog:hover{
    height: 60px;
 }
 #team .title .angle {
-	left:75px;
-   height: 60px;
+	left:95px;
+   height: 50px;
 }
 #team .title .line-vert {
-	left:75px;
+	left:90px;
    height: 60px;
 }
 #services .title .angle {
@@ -3133,11 +3125,14 @@ a.link-blog:hover{
 	margin-left:-160px;
 }
 .home-text-top{
-	font-size: 25px;
-	line-height:25px;
+	font-size: 15px;
+	line-height:20px;
+}
+.home-text-top p{
+	font-size: 10px;
 }
 .home-text-middle{
-	font-size: 60px;
+	font-size: 35px;
 	line-height:60px;
 }
 .home-text-bottom{
