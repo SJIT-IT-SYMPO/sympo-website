@@ -170,7 +170,7 @@
 	border:0;
 }
 #flkr {
-	position: relative;
+	position: fixed;
 }
 
 #flkr img{
@@ -2942,7 +2942,9 @@ a.link-blog:hover{
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	h1 { font-size: 65px; line-height:67px;}
-
+	.home-text-top p{
+		font-size: 30px;
+	}
 .parallax{
 	background-attachment:scroll;
 	background-size:100% auto;
@@ -3085,6 +3087,9 @@ a.link-blog:hover{
 @media only screen and (min-width: 320px) and (max-width: 479px) {
 	h1 { font-size: 25px; line-height:27px;}
 	img {width:50px;height: 50px;}
+	.home-text-top p{
+		font-size: 30px;
+	}
 #profile .title .angle  h1,
 #team .title .angle  h1,
 #services .title .angle  h1,
