@@ -606,6 +606,9 @@
 	-o-animation-duration:1.5s;
 	animation-duration:1.5s;
 }
+.home-text-top p{
+	font-size: 30px;
+}
 @-webkit-keyframes fadeInDownBig {
 	0% {
 		opacity: 0;
@@ -1075,6 +1078,7 @@
 			border-radius: 3px;
 	}
 	.logo {
+		display:none;
 			margin-top:10px;
 	}
 	ul#menu li {
@@ -1119,6 +1123,7 @@
 }
 @media only screen and (max-width: 767px) {
 	.logo{
+		display:none;
 			margin-left:10px;
 			margin-top:10px;
 			width: 140px;
@@ -1173,6 +1178,7 @@
 
 
 	.logo {
+		display:none;
 			margin-left:-10px;
 			margin-top:15px;
 			width: 112px;
