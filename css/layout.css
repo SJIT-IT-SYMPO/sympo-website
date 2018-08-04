@@ -1131,6 +1131,7 @@
 	}
 
 	#navigation ul {
+		display:none;
 			width: 200px;
 			padding: 5px 0;
 			position: relative;
@@ -1186,6 +1187,7 @@
 	}
 
 	#navigation ul {
+		display:none;
 			width: 120px;
 			padding: 5px 0;
 			position: relative;
@@ -1825,7 +1827,7 @@
 	margin: 0 auto;
 	width: 100%;
 	margin-top:4px;
-	background: url('../images/MINDSURFERS.png') no-repeat top center;
+	background: url('../images/mindsurfersnew.png') no-repeat top center;
 	background-size:cover;
 	height:600px;
 	overflow:hidden;
@@ -3089,6 +3091,21 @@ a.link-blog:hover{
 	img {width:50px;height: 50px;}
 	.home-text-top p{
 		font-size: 30px;
+	}
+	.team11{
+		background: url('../images/devnationphone.png') no-repeat top center;
+	}
+	.team12{
+		background: url('../images/mindsurfersnewphone.png') no-repeat top center;
+	}
+	.team13{
+		background: url('../images/marvelvsdcphone.png') no-repeat top center;
+	}
+	.team14{
+		background: url('../images/bringitbackphone.png') no-repeat top center;
+	}
+	.teaam15{
+		/*background: url('../images/DEVNATION.png') no-repeat top center;*/
 	}
 #profile .title .angle  h1,
 #team .title .angle  h1,
