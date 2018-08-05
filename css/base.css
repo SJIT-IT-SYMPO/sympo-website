@@ -69,7 +69,7 @@
 	h1, h2, h3, h4, h5, h6 {
 		color: #e9e9e9;
 		font-family: 'Poiret One', cursive;
-		text-transform: uppercase;font-weight:600;
+		text-transform: none;font-weight:600;
 		 }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	h1 { font-size: 60px; line-height:62px;}
@@ -87,7 +87,7 @@
 	em { font-style: italic; }
 	strong { font-weight: 900;}
 	small { font-size: 80%; }
-	
+
 .dropcap {
 	float: left;
 	font-weight:bold;
@@ -95,7 +95,7 @@
 	font-size: 420%;
 	margin-right: 10px;
 	color: #292929;
-}	
+}
 .dropcap-red {
 	float: left;
 	font-weight:bold;
@@ -103,7 +103,7 @@
 	font-size: 400%;
 	margin-right: 10px;
 	color: #EB767E;
-}	
+}
 .dropcap-orange-circle {
 	float: left;
 	font-weight:800;
@@ -175,7 +175,7 @@
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"] {
-	background:#363636;	
+	background:#363636;
 	margin-top:10px;
 	border:none;
 	  color: #dfdfdf;
@@ -187,14 +187,14 @@
 	-webkit-transition : all 0.3s ease-out;
 	-moz-transition : all 0.3s ease-out;
 	-o-transition :all 0.3s ease-out;
-	transition : all 0.3s ease-out; 
+	transition : all 0.3s ease-out;
 	width:100%}
 
 	.button:hover,
 	button:hover,
 	input[type="submit"]:hover,
 	input[type="reset"]:hover,
-	input[type="button"]:hover {	
+	input[type="button"]:hover {
 	  color: #e74c3c;
 	background:#292929;	 }
 
@@ -202,7 +202,7 @@
 	button:active,
 	input[type="submit"]:active,
 	input[type="reset"]:active,
-	input[type="button"]:active {	
+	input[type="button"]:active {
 	  color: #e74c3c;}
 
 	.button.full-width,
@@ -259,4 +259,3 @@
 	color : white ;
 	padding: 10px 10px 10px 10px ;
 }
-	
