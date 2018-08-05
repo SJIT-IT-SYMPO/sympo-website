@@ -658,6 +658,7 @@ But that's the creativity of those eye which creates something different.</p>
 			<div class="sixteen columns cbp-so-side cbp-so-side-right">
 				<form  id="form_reg" >
 				<h4 >Say Hello</h4>
+				 <h4>{{tanku}} </h4>
 
 
 					<label for="name">Name: *
@@ -676,7 +677,7 @@ But that's the creativity of those eye which creates something different.</p>
 
 					</label>
 					<input name="email" id="college" type="text" v-model="college" />
-					<label for="email">Phone Number: {{err_phone}}
+					<label for="email">Phone Number:* {{err_phone}}
 						<span class="error" id="err-email">please enter your phone number</span>
 						<span class="error" id="err-emailvld">e-mail is not a valid format</span>
 					</label>
@@ -686,16 +687,7 @@ But that's the creativity of those eye which creates something different.</p>
 						<div  class="my_button" v-on:click="createParticipant">Submit</div>
 						<!-- <div  class="my_button" v-on:click="setName">Submit</div> -->
 					</center>
-<<<<<<< HEAD
-					
-					
-=======
 
-
-
-
-
->>>>>>> 7154b67cf42d061d58788f00318dd5272a92b8e5
 				</form>
 
 			</div>
@@ -805,10 +797,12 @@ var vue = new Vue({
     			phone_no :"" ,
     			err_email : "" ,
     			err_phone : "" ,
+    			tanku : "",
     			err : {
     				"name" : "",
     				"email" : "",
     			} ,
+    			
 
   					},
 				  methods: {
@@ -821,57 +815,44 @@ var vue = new Vue({
 				    	"phone_no" : this.phone_no},
 
       					).then(function(response){
-<<<<<<< HEAD
       						vue.name = "";
       						// console.log("sadasdasdasd");	
       						vue.email = "" ;
       						vue.college = "";
       						vue.phone_no = "";
       						vue.success = !this.success ;
-      						// console.log(this.success);
-=======
->>>>>>> 7154b67cf42d061d58788f00318dd5272a92b8e5
-      						alert("Thank u For Registering");
+      						     						
       						vue.name = "";
-      						// console.log("sadasdasdasd");
       						vue.email = "" ;
       						vue.college = "";
       						vue.phone_no = "";
-
-      						// console.log(this.success);
+      						vue.tanku = "Thanku For registering ";
+      						
 
 
       					})
       					.catch(function(error){
-<<<<<<< HEAD
+// <<<<<<< HEAD
+							vue.tanku = "Form Not Submitted" ;
       						console.log(this);
       						console.log("error");
       						console.log(vue.name);
       						this.name = "";
       						console.log(vue.name);
       						this.err_email = error.response.data['email'][0];
-      						// alert(this.err_email);      					
+      						// alert(this.err_email);      	
+      						vue.err_email = error.response.data['email'][0];
+      						vue.err_phone = error.response.data['phone_no'][0];
+      						
 
       					})
       					
 				      
 				    },
-				    setName : function () {
-				    	this.name = "";
-				    }  
-=======
+				   
 
-      						vue.name = "";
-      						// console.log(vue.name);
-      						vue.err_email = error.response.data['email'][0];
-      						vue.err_phone = error.response.data['phone_no'][0];
-      						// alert(this.err_email);
-
-      					})
-
-
-				    }
->>>>>>> 7154b67cf42d061d58788f00318dd5272a92b8e5
+				    // }
+// >>>>>>> 7154b67cf42d061d58788f00318dd5272a92b8e5
 				  }
 				})
 
