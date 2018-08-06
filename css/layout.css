@@ -969,14 +969,14 @@
 
 .cl-effect-18 a:hover::before,
 .cl-effect-18 a:focus::before {
-	-webkit-transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
 
 .cl-effect-18 a:hover::after,
 .cl-effect-18 a:focus::after {
-	-webkit-transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
@@ -1176,7 +1176,6 @@
 	}
 }
 @media only screen and (max-width: 479px) {
-
 
 	.logo {
 		display:none;
@@ -3065,6 +3064,7 @@ a.link-blog:hover{
 .cl-effect-18 {
 	margin-top:20px;
 }
+
 #arrow a{
 	height:60px;
 	background-size:50px 30px;
