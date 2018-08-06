@@ -259,3 +259,13 @@
 	color : white ;
 	padding: 10px 10px 10px 10px ;
 }
+
+.my_button:hover {
+	/*color : #d35400 ;*/
+	cursor: pointer;
+	/*background-color: ;*/
+}
+
+.error{
+	color : #c81225;
+}

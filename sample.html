@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sample form</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+
+</head>
+<body>
+
+<form name="ajax-form" id="form_reg"  >
+				<h4>Say Hello</h4>
+					<label for="name">Name: *  {{ name }}
+						<span class="error" id="err-name" >please enter name</span>
+					
+					</label>
+					<input name="name" id="name" type="text" v-model="name" />
+					<label for="email">E-Mail: * 
+						<span class="error" id="err-email">please enter e-mail</span>
+						<span class="error" id="err-emailvld">e-mail is not a valid format</span>
+					</label>
+					<input name="email" id="email" type="text" v-model="email" />
+					<label for="email">College: * 
+						<span class="error" id="err-email">please Your College name</span>
+						
+					</label>
+					<input name="email" id="college" type="text" v-model="college" />
+					<label for="email">Phone Number: 
+						<span class="error" id="err-email">please enter your phone number</span>
+						<span class="error" id="err-emailvld">e-mail is not a valid format</span>
+					</label>
+					<input name="email" id="phone" type="text" v-model="phone_no" />
+					<!-- <button  >Submit</button> -->
+					<div class="send_message" id="send" v-on:click="createParticipant" >Submit</div>
+					<div class="error" id="err-form">There was a problem validating the form please check!</div>
+					<div class="error" id="err-timedout">The connection to the server timed out!</div>
+					<div class="error" id="err-state"></div>
+				</form>
+
+
+<script type="text/javascript" >
+
+var vue = new Vue({
+  			el: '#form_reg',
+ 			 data: {
+    			name :"",
+    			email :"",
+    			college :"" ,
+    			phone_no :"" ,
+  					}
+  					,
+				  methods: {
+				    createParticipant: function () {
+				    	// ggg = 
+				      axios.post("http://incognito18.pythonanywhere.com/api/",
+				      	{"name" : this.name ,
+				    	 "email" : this.email , 
+				    	"college" : this.college , 
+				    	"phone_no" : this.phone_no}, 
+				    	{
+				    		// headers: {
+        		// 		'Access-Control-Allow-Origin': "*",
+        		// 		'Content-Type': 'application/json',
+        		// 		'Access-Control-Allow-Methods': 'POST',
+        		// 		'Access-Control-Allow-Headers' : "x-test-header, Origin, X-Requested-With, Content-Type, Accept",
+
+      				// 	}
+      				} 
+      					);
+				      console.log(this.name);
+				    }
+				  }
+				})
+</script> 	  
+
+</body>
+</html>
